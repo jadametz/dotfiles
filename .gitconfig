@@ -1,0 +1,57 @@
+[alias]
+
+	# Preferred compact log format
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[branch]
+
+	# Git pull with automatic rebase
+	autosetuprebase = always
+
+[branch "master"]
+
+	# Git pull with automatic rebase
+	rebase = true
+
+
+[core]
+
+	# Lets OS X and Windows collaborators play nice together
+	autocrlf = input
+
+	# Make `git rebase` safer on OS X
+	# More info: http://www.git-tower.com/blog/make-git-rebase-safe-on-osx
+	trustctime = false
+
+	# Treat spaces before tabs and trailing whitespace as an error
+	# [default] trailing-space: looks for spaces at the end of a line
+	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+[color]
+
+	# Colors for the CLI (This is the default setting for Git >= 1.8.4)
+	ui = true
+
+[credential]
+
+	# Allow OS X Keychain to manage Github credentials
+	helper = osxkeychain
+
+[help]
+
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+[merge]
+
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+
+	# Preferred tool for solving merge conflicts
+	tool = vimdiff
+
+[push]
+
+	# Only push changes for the active branch
+	default = simple
