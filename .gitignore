@@ -1,0 +1,20 @@
+#########################
+# Mac stuff
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external drives
+.Spotlight-V100
+.Trashes
+
+#########################
+# Language specific stuff
+
+# Compile Python files
+*.pyc
