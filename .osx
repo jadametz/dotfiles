@@ -20,6 +20,9 @@ sudo pmset -a standbydelay 43200
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
+# Use dark menu bar and Dock
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
@@ -95,6 +98,9 @@ sudo pmset -a sms 0
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
+
+# Enable silent clicking
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 1
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -240,6 +246,9 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Set the icon size of Dock items to 32 pixels
 defaults write com.apple.dock tilesize -int 32
+
+# Change position on screen to left
+defaults write com.apple.dock orientation -string "left"
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
