@@ -47,6 +47,7 @@ Some additional apps that I don't install with Homebrew
 
 * [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
 * [Alfred](https://www.alfredapp.com/)
+* [Authy](https://www.authy.com/app/)
 * [Clear](https://itunes.apple.com/us/app/clear-tasks-reminders-to-do/id504544917?mt=12)
 * [DaisyDisk](https://itunes.apple.com/us/app/daisydisk/id411643860?mt=12)
 * [Divvy](https://itunes.apple.com/us/app/divvy-window-manager/id413857545?mt=12)
