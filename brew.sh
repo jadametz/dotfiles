@@ -68,6 +68,7 @@ brew cask install google-chrome
 brew cask install intellij-idea
 brew cask install istat-menus
 brew cask install iterm2
+brew cask install java
 brew cask install phpstorm
 brew cask install pycharm
 brew cask install sequel-pro
