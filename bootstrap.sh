@@ -4,7 +4,7 @@
 cd "$(dirname "${BASH_SOURCE}")";
 
 function bootstrap() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude ".idea/" --exclude "bootstrap.sh" --exclude "README.md" --exclude "LICENSE" -avh --no-perms . ~;
 	source ~/.bash_profile;
 }
 
