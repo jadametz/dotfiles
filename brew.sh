@@ -59,6 +59,10 @@ brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 
+# Python
+brew install python
+brew install python3
+
 # Install via Homebrew Cask
 brew cask install atom
 brew cask install caffeine
