@@ -1,4 +1,4 @@
-yntax file
+" Vim syntax file
 " Language:     JSON
 " Maintainer:   Jeroen Ruigrok van der Werven <asmodai@in-nomine.org>
 " Last Change:  2009-06-16
