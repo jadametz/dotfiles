@@ -52,6 +52,11 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 brew install homebrew/php/php55 --with-gmp
 
+# Install encryption stuff
+brew install pwgen
+brew install gpg
+brew install gpg-agent
+
 # Install other useful things
 brew install ack
 brew install git
