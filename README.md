@@ -25,7 +25,20 @@ To update things later on:
 source bootstrap.sh
 ```
 
-## Install Homebrew formulae
+### Adding custom commands
+
+If `~/.extra` exists, it will be sourced along with the other files. For example, the following content is in my `~/.extra` so that my GitHub username is not source controlled as part of this repository.
+
+```shell
+GIT_AUTHOR_NAME="Jesse Adametz"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="jesseadametz@gmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+```
+
+### Install Homebrew formulae
 
 During a fresh Mac provisioning we'll tack on the `-f` flag so we install Homebrew + the formulae.
 
@@ -33,7 +46,7 @@ During a fresh Mac provisioning we'll tack on the `-f` flag so we install Homebr
 ./brew.sh -f
 ```
 
-## OS X defaults
+### OS X defaults
 
 For use when setting up a new Mac
 
@@ -48,11 +61,9 @@ Some additional apps that I don't install with Homebrew
 * [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
 * [Alfred](https://www.alfredapp.com/)
 * [Authy](https://www.authy.com/app/)
-* [Clear](https://itunes.apple.com/us/app/clear-tasks-reminders-to-do/id504544917?mt=12)
 * [DaisyDisk](https://itunes.apple.com/us/app/daisydisk/id411643860?mt=12)
 * [Divvy](https://itunes.apple.com/us/app/divvy-window-manager/id413857545?mt=12)
 * [Fantastical 2](https://itunes.apple.com/us/app/fantastical-2-calendar-reminders/id975937182?mt=12)
-* [Pocket](https://itunes.apple.com/us/app/pocket/id568494494?mt=12)
 * [Soulver](https://itunes.apple.com/us/app/soulver/id413965349?mt=12)
 
 ## Thanks to...
