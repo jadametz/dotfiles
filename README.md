@@ -40,10 +40,10 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 ### Install Homebrew formulae
 
-During a fresh Mac provisioning we'll tack on the `-f` flag so we install Homebrew + the formulae.
+During a fresh Mac provisioning we'll tack on the `-i` flag so we install Homebrew + the formulae.
 
 ```sh
-./brew.sh -f
+./brew.sh -i
 ```
 
 ### OS X defaults
