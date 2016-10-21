@@ -85,3 +85,16 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# docker helper functions
+function docker-ip() {
+  if [[ $(docker -v 2>&1) =~ "command not found" ]]; then
+    echo "Error: This command is more useful when Docker is installed."
+  fi
+
+  if [ -z "$1" ]; then
+    echo "usage: docker-ip [ container-name | container-id ]"
+  else
+    docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$1"
+  fi
+}
