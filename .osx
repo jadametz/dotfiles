@@ -3,7 +3,7 @@
 # ~/.osx — https://mths.be/osx
 # This is a trimmed down version to fit my (Jesse Adametz) preferences
 
-# Ash for the admin password upfront
+# Ask for the admin password upfront
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
