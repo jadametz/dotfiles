@@ -98,3 +98,9 @@ function docker-ip() {
     docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$1"
   fi
 }
+
+# fix Apple monitor camera
+function fix-camera() {
+  sudo killall VDCAssistant
+}
+
