@@ -66,6 +66,7 @@ brew install gpg-agent
 # Install other useful things
 brew install ack
 brew install git
+brew install hub
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree

@@ -11,6 +11,7 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 
 # Git
+alias git="hub"
 alias ga="git add"
 alias gcmsg="git commit -m"
 alias gd="git diff"
