@@ -19,6 +19,12 @@ alias gdca="git diff --cached"
 alias gpp="git pull && git push"
 alias gst="git status"
 
+# Kubernetes (kubectl)
+alias kcfg="kubectl config"
+alias kcfg-get="kubectl config get-contexts"
+alias kcfg-set="kubectl config set-context"
+alias kcfg-use="kubectl config use-context"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
