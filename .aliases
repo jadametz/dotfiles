@@ -8,6 +8,7 @@ alias .....="cd ../../../.."
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias g="cd ~/go/src"
 alias p="cd ~/projects"
 
 # Git
