@@ -6,8 +6,8 @@
 # CLI Options // Usage
 if [ "#1" = "-h" ] || [ "$1" = "--help" ] ; then
 	echo "Usage: brew.sh (-i)"
-	echo "Example formulae install: brew.sh"
-	echo "Example Homebrew + formulae install: brew.sh -i"
+	echo "Formulae install: brew.sh"
+	echo "Homebrew + formulae install: brew.sh -i"
 
 	exit 0
 fi
