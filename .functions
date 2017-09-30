@@ -28,16 +28,6 @@ function server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
 }
 
-# Syntax-highlight JSON strings or files
-# Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
-function json() {
-	if [ -t 0 ]; then # argument
-		python -mjson.tool <<< "$*" | pygmentize -l javascript;
-	else # pipe
-		python -mjson.tool | pygmentize -l javascript;
-	fi;
-}
-
 # `s` with no arguments opens the current directory in Sublime Text, otherwise
 # opens the given location
 function s() {
@@ -84,19 +74,6 @@ function o() {
 # small enough for one screen.
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
-}
-
-# docker helper functions
-function docker-ip() {
-  if [[ $(docker -v 2>&1) =~ "command not found" ]]; then
-    echo "Error: This command is more useful when Docker is installed."
-  fi
-
-  if [ -z "$1" ]; then
-    echo "usage: docker-ip [ container-name | container-id ]"
-  else
-    docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$1"
-  fi
 }
 
 # fix Apple monitor camera
