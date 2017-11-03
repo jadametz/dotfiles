@@ -1,3 +1,6 @@
+# Ruby
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # Load the dotfiles
 # * ~/.path is used to extend `$PATH`
 # * ~/.extra can be used for things that shouldn't be commit
@@ -34,9 +37,6 @@ else
     echo "sudo pip install --no-deps stevedore"
     echo "sudo pip install --no-deps virtualenvwrapper"
 fi
-
-# Ruby
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
