@@ -71,6 +71,11 @@ brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 
+# Docker / Kubernetes
+brew install docker
+brew install kubernetes-cli
+brew install kubectx --with-short-names
+
 # Python
 brew install python
 brew install python3
@@ -86,7 +91,6 @@ rbenv rehash
 brew cask install atom
 brew cask install caffeine
 brew cask install cloud
-brew cask install docker
 brew cask install flux
 brew cask install google-chrome
 brew cask install istat-menus
