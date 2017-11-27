@@ -69,6 +69,7 @@ brew install git
 brew install hub
 brew install speedtest_cli
 brew install ssh-copy-id
+brew install tldr
 brew install tree
 
 # Docker / Kubernetes
