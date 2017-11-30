@@ -18,6 +18,7 @@ alias gcmsg="git commit -m"
 alias gd="git diff"
 alias gdca="git diff --cached"
 alias gpp="git pull && git push"
+alias gsha="git rev-parse HEAD"
 alias gst="git status"
 
 # Detect which `ls` flavor is in use
