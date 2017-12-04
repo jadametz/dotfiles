@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Heavily inspired by mathiasbynens/dotfiles/bootstrap.sh
 
-cd "$(dirname "${BASH_SOURCE}")";
-
 function bootstrap() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
@@ -11,6 +9,9 @@ function bootstrap() {
 		--exclude "README.md" \
 		--exclude "LICENSE" \
 		-avh --no-perms . ~;
+
+	# https://github.com/Microsoft/vscode/issues/3884
+	ln -sf ~/vs_code_settings.json ~/Library/Application\ Support/Code/User/settings.json
 	source ~/.bash_profile;
 }
 
