@@ -121,7 +121,7 @@ brew cask install slack
 brew cask install soulver
 brew cask install spotify
 brew cask install sublime-text
-brew cask install textexpander
+brew cask install textexpander5
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
