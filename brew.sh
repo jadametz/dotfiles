@@ -47,6 +47,8 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
+brew install bash-completion@2
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -72,6 +74,7 @@ brew install git
 brew install hub
 brew install speedtest_cli
 brew install ssh-copy-id
+brew install terraform
 brew install tldr
 brew install tree
 
@@ -81,6 +84,9 @@ brew cask install font-fira-code
 # Docker / Kubernetes
 brew cask install docker-edge
 brew install kubectx --with-short-names
+
+# Golang
+brew install golang
 
 # Python
 brew install python
@@ -101,6 +107,7 @@ brew cask install caffeine
 brew cask install cloud
 brew cask install daisydisk
 brew cask install divvy
+brew cask install dropbox
 brew cask install flux
 brew cask install google-chrome
 brew cask install google-cloud-sdk
