@@ -54,18 +54,6 @@ For use when setting up a new Mac
 ./.osx
 ```
 
-## App Store
-
-Some additional apps that I don't install with Homebrew
-
-* [1Password](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12)
-* [Alfred](https://www.alfredapp.com/)
-* [Authy](https://www.authy.com/app/)
-* [DaisyDisk](https://itunes.apple.com/us/app/daisydisk/id411643860?mt=12)
-* [Divvy](https://itunes.apple.com/us/app/divvy-window-manager/id413857545?mt=12)
-* [Fantastical 2](https://itunes.apple.com/us/app/fantastical-2-calendar-reminders/id975937182?mt=12)
-* [Soulver](https://itunes.apple.com/us/app/soulver/id413965349?mt=12)
-
 ## Thanks to...
 
 [Mathias Bynens](https://mathiasbynens.be/) and all of the work him and his contributor's have done on his [dotfiles](https://github.com/mathiasbynens/dotfiles) repository. I learned a ton putting my own repository together while pulling a majority of information from him.
