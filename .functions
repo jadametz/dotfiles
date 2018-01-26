@@ -75,3 +75,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# apparently this function fixes all external webcams
+function fix-camera() {
+  sudo killall VDCAssistant
+}
