@@ -80,3 +80,7 @@ function tre() {
 function fix-camera() {
   sudo killall VDCAssistant
 }
+
+function gbranch() {
+  git symbolic-ref --quiet --short HEAD
+}
