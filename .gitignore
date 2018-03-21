@@ -16,6 +16,7 @@ Thumbs.db
 #########################
 # JetBrains IDE Project Files
 .idea/
+.vscode/
 
 #########################
 # Language specific stuff
