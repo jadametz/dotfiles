@@ -11,8 +11,6 @@ function bootstrap() {
 		--exclude "LICENSE" \
 		-avh --no-perms . ~;
 
-	# https://github.com/Microsoft/vscode/issues/3884
-	ln -sf ~/vs_code_settings.json ~/Library/Application\ Support/Code/User/settings.json
 	source ~/.bash_profile;
 }
 
