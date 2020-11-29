@@ -93,32 +93,30 @@ brew install python3
 brew install rbenv
 
 # Install via Homebrew Cask
-brew install --cask 1password
-brew install --cask alfred
-brew install --cask atom
-brew install --cask authy
-brew install --cask caffeine
-brew install --cask cloud
-brew install --cask daisydisk
-brew install --cask divvy
-brew install --cask dropbox
-brew install --cask flux
-brew install --cask google-chrome
-brew install --cask google-cloud-sdk
-brew install --cask istat-menus
-brew install --cask iterm2
-brew install --cask java
-brew install --cask postman
-brew install --cask sequel-pro
-brew install --cask skitch
-brew install --cask slack
-brew install --cask soulver
-brew install --cask spotify
-brew install --cask sublime-text
-brew install --cask textexpander5
-brew install --cask vagrant
-brew install --cask virtualbox
-brew install --cask visual-studio-code
+brew install --casks \
+	1password \
+	1password-cli \
+	# alfred \
+	authy \
+	daisydisk \
+	discord \
+	divvy \
+	dropbox \
+	google-cloud-sdk \
+	istat-menus \
+	iterm2 \
+	java \
+	notion \
+	postman \
+	sequel-pro \
+	# slack \
+	soulver \
+	spotify \
+	sublime-text \
+	textexpander5 \
+	vagrant \
+	virtualbox \
+	visual-studio-code \
 
 # Remove outdated versions from the cellar.
 brew cleanup
