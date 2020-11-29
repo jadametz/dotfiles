@@ -46,14 +46,6 @@ During a fresh Mac provisioning we'll tack on the `-i` flag so we install Homebr
 ./brew.sh -i
 ```
 
-### OS X defaults
-
-For use when setting up a new Mac
-
-```sh
-./.osx
-```
-
 ## Thanks to...
 
 [Mathias Bynens](https://mathiasbynens.be/) and all of the work him and his contributor's have done on his [dotfiles](https://github.com/mathiasbynens/dotfiles) repository. I learned a ton putting my own repository together while pulling a majority of information from him.
