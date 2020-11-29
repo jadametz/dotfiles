@@ -108,6 +108,7 @@ brew install --casks \
 	java \
 	notion \
 	postman \
+	quitter \
 	sequel-pro \
 	# slack \
 	soulver \
