@@ -14,7 +14,7 @@ fi
 
 # Install Homebrew.
 if [ "$1" = "-i" ] ; then
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Make sure we're using the latest Homebrew.
@@ -59,8 +59,6 @@ brew install caskroom/cask/brew-cask
 brew install vim --override-system-vi
 brew install grep
 brew install openssh
-brew install screen
-brew tap homebrew/homebrew-php
 
 # Install encryption stuff
 brew install pwgen
@@ -82,49 +80,45 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 
 # Docker / Kubernetes
-brew cask install docker-edge
-brew install kubectx --with-short-names
+brew install docker
+brew install kubectx
 
 # Golang
 brew install golang
 
 # Python
-brew install python
 brew install python3
 
 # Ruby
 brew install rbenv
-rbenv install 2.4.2
-rbenv global 2.4.2
-rbenv rehash
 
 # Install via Homebrew Cask
-brew cask install 1password
-brew cask install alfred
-brew cask install atom
-brew cask install authy
-brew cask install caffeine
-brew cask install cloud
-brew cask install daisydisk
-brew cask install divvy
-brew cask install dropbox
-brew cask install flux
-brew cask install google-chrome
-brew cask install google-cloud-sdk
-brew cask install istat-menus
-brew cask install iterm2
-brew cask install java
-brew cask install postman
-brew cask install sequel-pro
-brew cask install skitch
-brew cask install slack
-brew cask install soulver
-brew cask install spotify
-brew cask install sublime-text
-brew cask install textexpander5
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install visual-studio-code
+brew install --cask 1password
+brew install --cask alfred
+brew install --cask atom
+brew install --cask authy
+brew install --cask caffeine
+brew install --cask cloud
+brew install --cask daisydisk
+brew install --cask divvy
+brew install --cask dropbox
+brew install --cask flux
+brew install --cask google-chrome
+brew install --cask google-cloud-sdk
+brew install --cask istat-menus
+brew install --cask iterm2
+brew install --cask java
+brew install --cask postman
+brew install --cask sequel-pro
+brew install --cask skitch
+brew install --cask slack
+brew install --cask soulver
+brew install --cask spotify
+brew install --cask sublime-text
+brew install --cask textexpander5
+brew install --cask vagrant
+brew install --cask virtualbox
+brew install --cask visual-studio-code
 
 # Remove outdated versions from the cellar.
 brew cleanup
