@@ -36,17 +36,7 @@ function s() {
 	else
 		subl "$@";
 	fi;
-}
 
-# `a` with no arguments opens the current directory in Atom Editor, otherwise
-# opens the given location
-function a() {
-	if [ $# -eq 0 ]; then
-		atom .;
-	else
-		atom "$@";
-	fi;
-}
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
@@ -79,8 +69,4 @@ function tre() {
 # apparently this function fixes all external webcams
 function fix-camera() {
   sudo killall VDCAssistant
-}
-
-function gbranch() {
-  git symbolic-ref --quiet --short HEAD
 }
