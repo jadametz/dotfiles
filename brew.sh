@@ -23,12 +23,19 @@ brew update
 # Upgrade all already-installed formulae.
 brew upgrade --all
 
+# Save Homebrew’s installed location.
+BREW_PREFIX=$(brew --prefix)
+
 # Alternative versions of Casks
 brew tap caskroom/versions
 
-# Install updated GNU core utilities and add to `$PATH`.
+# Install GNU core utilities (those that come with macOS are outdated).
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+
+# Install some other usefull utilities like `sponge`.
+brew install moreutils
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
@@ -36,34 +43,20 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 
-# Install Bash 4.
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
-# running `chsh`.
+# Install a modern version of Bash.
 brew install bash
-
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
-fi;
-
 brew install bash-completion@2
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install Homebrew extension Cask
-brew install caskroom/cask/brew-cask
+# Install GnuPG to enable PGP-signing commits.
+brew install gnupg
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install grep
 brew install openssh
-
-# Install encryption stuff
-brew install pwgen
-brew install gpg
-brew install gpg-agent
 
 # Install other useful things
 brew install ack
@@ -118,6 +111,7 @@ brew install --casks \
 	vagrant \
 	virtualbox \
 	visual-studio-code \
+	zappy
 
 # Remove outdated versions from the cellar.
 brew cleanup
