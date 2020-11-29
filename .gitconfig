@@ -48,6 +48,12 @@
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
 
+[init]
+
+	# Allows overriding the default branch name
+	# e.g. when initializing a new repository or when cloning an empty repository.
+	defaultBranch = main
+
 [merge]
 
 	# Include summaries of merged commits in newly created merge commit messages
