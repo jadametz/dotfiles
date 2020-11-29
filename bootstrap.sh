@@ -4,9 +4,7 @@
 function bootstrap() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
-		--exclude ".idea/" \
 		--exclude "bootstrap.sh" \
-		--exclude "divvy_settings.webloc" \
 		--exclude "README.md" \
 		--exclude "LICENSE" \
 		-avh --no-perms . ~;
