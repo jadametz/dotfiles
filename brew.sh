@@ -20,14 +20,11 @@ fi
 # Make sure we're using the latest Homebrew.
 brew update
 
-# Upgrade all already-installed formulae.
-brew upgrade --all
-
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
 # Alternative versions of Casks
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
